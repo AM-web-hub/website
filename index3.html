@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="https://placehold.co/32x32/3b82f6/ffffff?text=BM" type="image/x-icon">
+    <title>
+        BBAALE MUGERA CONSTRUCTION COMPANY LTD.
+    </title>
+    <style>
+        /* Custom CSS */
+        :root {
+            /* Primary color remains light blue */
+            --primary-color: #3b82f6;
+            /* Light Blue */
+            --secondary-color: #1f2937;
+            /* Dark Gray */
+            --light-gray: #f8f9fa;
+            --gray: #6c757d;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Hero Section Styling - Updated Background Image */
+        #home {
+            height: 80vh;
+            /* Updated the url() to use the new House 3 image */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/House\ 3.jpg') no-repeat center center;
+            background-size: cover;
+            /* Ensure the image covers the section */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            #home h1 {
+                font-size: 2.5rem;
+            }
+
+            #home {
+                height: 70vh;
+            }
+        }
+
+        /* Section Padding */
+        section {
+            padding: 60px 0;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
+        }
+
+        /* Icon Styling */
+        .service-icon i {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        #contact .bi {
+            color: var(--primary-color);
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 25px;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+            border-color: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: bold;
+        }
+
+        .btn-secondary:hover {
+            background-color: #374151;
+            border-color: #374151;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--secondary-color);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 30px 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: bold;
+            /* Adjust font size if name is too long */
+            font-size: 1.1rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(31, 41, 55, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Form Styling */
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">BBAALE MUGERA CONSTRUCTION COMPANY LTD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="padding-top: 70px;">
+        <section id="home">
+            <div class="container">
+                <h1>Building Quality Homes in Uganda</h1>
+                <p class="lead mb-4 mx-auto" style="max-width: 600px;">Your trusted partner in residential construction,
+                    from foundation to finish.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Contact us</a>
+            </div>
+        </section>
+
+        <section id="services" class="bg-white">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Our Services</h2>
+                <p class="lead text-muted mb-5 mx-auto" style="max-width: 600px;">We offer comprehensive construction
+                    services tailored to your needs.</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-house-door-fill"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">New Home Construction</h3>
+                                <p class="card-text text-muted">Building beautiful, durable, and affordable homes from
+                                    the ground up.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">Renovations & Extensions</h3>
+                                <p class="card-text text-muted">Modernizing existing structures or adding new spaces to
+                                    your home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-clipboard-data-fill"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">Project Management</h3>
+                                <p class="card-text text-muted">Overseeing every phase of your construction project for
+                                    a smooth execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-light">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Our Projects</h2>
+                <p class="lead text-muted mb-5 mx-auto" style="max-width: 600px;">Take a look at some of our projects.
+                </p>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="/images/House 2.jpg" class="card-img-top" alt="House Under Construction Project">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">On going construction in Masaka</h3>
+                                <p class="card-text text-muted small">A recent house construction project underway.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="/images/House 4.jpg" class="card-img-top" alt="Eco-Friendly Villa Project">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">Completed house in Kampala</h3>
+                                <p class="card-text text-muted small">Beautiful and elegant design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="/images/a1740cf2-622e-4bcb-b005-542e01d50a2e.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold">On going construction in Kampala</h3>
+                                <p class="card-text text-muted small">Durable and affordable </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary mt-5">View More Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-6">
+                        <img src="https://placehold.co/600x400/bfdbfe/3b82f6?text=Our+Team"
+                            alt="Construction Team Working" class="img-fluid rounded shadow-lg"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0e0e0/757575?text=Image+Not+Found';">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="display-5 fw-bold mb-3">About BBAALE MUGERA CONST. CO. LTD.</h2>
+                        <p class="text-muted mb-3">
+                            Founded in [Year], BBAALE MUGERA CONSTRUCTION COMPANY LTD. has grown to become a leading
+                            residential
+                            builder in Uganda. Our mission is to construct high-quality, sustainable homes that meet the
+                            needs and aspirations of our clients.
+                        </p>
+                        <p class="text-muted mb-4">
+                            We pride ourselves on our skilled team, commitment to excellence, and deep understanding of
+                            the local building environment. We believe in building not just houses, but lasting
+                            relationships with our clients based on trust and integrity.
+                        </p>
+                        <a href="#contact" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-light">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">Get In Touch</h2>
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm h-100">
+                            <h3 class="h5 fw-bold mb-3">Contact Information</h3>
+                            <p class="text-muted mb-2"><strong><i class="bi bi-geo-alt-fill me-2"></i>Address:</strong>
+                                P.O. Box 936, MASAKA / 5498, KAMPALA</p>
+                            <p class="text-muted mb-2"><strong><i class="bi bi-telephone-fill me-2"></i>Phone:</strong>
+                                +256 772 467 812</p>
+                            <p class="text-muted mb-2"><strong><i class="bi bi-telephone-fill me-2"></i>Phone:</strong>
+                                +256 702 056 647</p>
+                            <p class="text-muted mb-4"><strong><i class="bi bi-envelope-fill me-2"></i>Email:</strong>
+                                mugerar@gmail.com</p>
+                            <h4 class="h6 fw-bold mb-2">Business Hours</h4>
+                            <p class="text-muted small mb-1">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p class="text-muted small mb-1">Saturday: 9:00 AM - 1:00 PM</p>
+                            <p class="text-muted small">Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="bg-white p-4 rounded shadow-sm h-100">
+                            <h3 class="h5 fw-bold mb-3">Send Us a Message</h3>
+                            <form action="#" method="POST">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">&copy; <span id="current-year"></span> BBAALE MUGERA CONSTRUCTION COMPANY LTD. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
